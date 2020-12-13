@@ -29,16 +29,23 @@ library(ggspatial)
 
 
 
-#Unzip the Data
+#Unzip muncipalities
 unzip("maakond_shp.zip")
 
-#Reading the data and loading assigning it to a dataframe
-maakond = st_read("maakond_20201101.shp")
+#unzip counties shp
+unzip("omavalitsus_shp.zip")
+
+#Reading the data and loading assigning it to a df
+maakonds = st_read("maakond_20201101.shp")
+
+counties=st_read("omavalitsus_20201101.shp")
+
 
 
 ggplot()+
   theme_minimal()+
-  geom_sf(data = maakond, aes(fill = as.factor(MNIMI)), size=0.5)+
+  geom_sf(data = maakonds, aes(fill = as.factor(MNIMI)), size=0.5)+
+  geom_sf(data = counties,fill='transparent',color="grey50") +
   north(maakond, location = "topleft", scale = 0.15, symbol = 12)+
   ggspatial::annotation_scale(
     location = "bl",
@@ -46,5 +53,6 @@ ggplot()+
     pad_y = unit(0, "cm"),
     pad_x=unit(1,"cm"))+
   labs(fill = "Muncipalities",caption = "Author: Bakhtiyar Garashov")+
-  ggtitle("Estonian muncipalities")
+  ggtitle("Muncipalities of Estonia")+
+  ggsave("Thematic_map_Eesti.png")
 

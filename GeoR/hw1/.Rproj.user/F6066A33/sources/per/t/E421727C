@@ -3,7 +3,7 @@
     "path": "C:/Users/Bakhtiyar Garashov/Desktop/3rd semester/GeoSpatial analysis with Python and R/GeoR/hw1/Thematic_map_script.R",
     "project_path": "Thematic_map_script.R",
     "type": "r_source",
-    "hash": "1838111949",
+    "hash": "2855768051",
     "contents": "",
     "dirty": false,
     "created": 1606389267128.0,
@@ -11,15 +11,15 @@
     "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "38,9",
-        "scrollLine": "20"
+        "cursorPosition": "55,38",
+        "scrollLine": "28"
     },
     "folds": "",
-    "lastKnownWriteTime": 1606403678,
+    "lastKnownWriteTime": 1606834260,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1606403678597,
+    "last_content_update": 1606834260089,
     "read_only": false,
     "read_only_alternatives": []
 }
